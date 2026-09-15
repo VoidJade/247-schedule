@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>24/7 Schedule</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="page">
+    <header class="topbar">
+      <div>
+        <div class="eyebrow">Always covered</div>
+        <h1>24/7 Schedule</h1>
+        <p>Shared hourly coverage.</p>
+      </div>
+      <div id="account" class="account"></div>
+    </header>
+
+    <section id="loginPanel" class="panel login-panel">
+      <h2>Sign in with Discord</h2>
+      <p>You must be logged in to view and use the schedule.</p>
+      <a class="button primary" href="/auth/discord">Login with Discord</a>
+    </section>
+
+    <main id="app" hidden>
+      <div class="toolbar">
+        <button class="button secondary" id="logout">Log out</button>
+        <span id="permissions"></span>
+      </div>
+      <section class="panel grid-panel">
+        <div class="grid" id="grid"></div>
+      </section>
+      <p class="hint">Click an empty hour to add a shift. Click a filled box to edit it. Overnight shifts are supported. Only the manager can remove shifts.</p>
+    </main>
+  </div>
+  <script src="/app.js"></script>
+</body>
+</html>
